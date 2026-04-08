@@ -24,7 +24,7 @@ else :
 
   for i in range(3, N+1) :
     memo[i] =max(
-        memo[i-2], memo[N-3] + cost[i-1]
+        memo[i-2], memo[i-3] + cost[i-1]
       ) + cost[i]
   
   print(memo[N])
